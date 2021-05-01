@@ -40,7 +40,7 @@ a) python3 needs to be installed on the system .
 
 b) Directory structure similar to the code base as present in Github link needs to be maintained.
 
-c) Additional json files needs to be added to the directory where currently marks.json file is present in the code base
+c) Additional json files needs to be added to the directory where currently marks.json file is present in the code base (that is inside v1 folder)
 
 d) `MySql` needs to be downloaded from official website.
 
