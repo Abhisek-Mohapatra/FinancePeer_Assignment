@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--   Last Update : April 30 6:09 pm -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="style.css"> -->
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+
+<html>
+<title>
+    Display Results
+</title>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="check.js"></script> -->
+    <script src="{{ url_for('static',filename='js/check.js')}}"></script>
+
+</head>
+
+
+<body>
+
+    <br><br>
+    <center>
+        <h2 style="font-weight: bold;"> User Marks Details</h2>
+    </center>
+
+
+
+    <br><br>
+    <center>
+
+        <table class='userTabClass'>
+            <tr>
+                <th>Physics</th>
+                <th>Chemistry</th>
+                <th>Maths</th>
+                <th>CSE</th>
+                <th>Total Marks</th>
+                <th>Marks Obtained</th>
+
+
+            </tr>
+            {% for user in userMarks %}
+            <tr>
+                <td>{{user[0]}}</td>
+                <td>{{user[1]}}</td>
+                <td>{{user[2]}}</td>
+                <td>{{user[3]}}</td>
+                <td>{{user[4]}}</td>
+                <td>{{user[5]}}</td>
+
+            </tr>
+
+            {% endfor %}
+
+        </table>
+
+    </center>
+
+    <br><br><br><br>
+
+    <center><button type="button" value="Log Out" class="submitBtn"><a href="/" style="text-decoration: none;">Log Out</a></button></center>
+
+    <br><br>
+
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>

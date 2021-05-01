@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--   Last Update : April 30 6:09 pm -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="style.css">  -->
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+
+<html>
+<title>
+    User Details
+</title>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="check.js"></script>   -->
+    <script src="{{ url_for('static',filename='js/check.js')}}"></script>
+
+</head>
+
+
+<body>
+
+
+    <p>&nbsp;</p>
+    <h1 class="header">
+        <marquee>Welcome to File Mela !!!</marquee>
+    </h1>
+    <p>&nbsp;</p>
+
+    <p>&nbsp;</p>
+
+    <!--            User Registration Details     -->
+
+
+    <h1 class="sectionHeader"> User Registration Information </h1>
+    <!--   Section Heading    -->
+    <hr class="rowBorder">
+    <!--     Horizontal Row Border    -->
+    <p>&nbsp;</p>
+
+    <div class="textBox">
+        <!--  Box where text is added -->
+
+        <span class="validateText"> Kindly enter User details !!! </span>
+        <p>&nbsp;</p>
+        <br>
+
+
+        <div class="valUser">
+
+            <form action="#" onsubmit="return true" method="POST">
+
+
+                <span class="formDetails">Username : </span> &nbsp; &nbsp; <input type="text" name="userName" class="formInput" placeholder="Enter Username...." disabled><br>
+                <p>&nbsp;</p>
+                <span class="formDetails">Password : </span> &nbsp; &nbsp; <input type="password" name="userPassword" class="formInput" placeholder="Enter Password...." disabled><br><br>
+
+                <button type="button" value="Already Registered?" class="submitBtn1"><a href="/login.html" style="text-decoration: none;">Already Registered?</a></button>
+                <br>
+                <button type="button" value="New User?" class="submitBtn"><a href="/newuser.html" style="text-decoration: none;">New User?</a></button>
+
+            </form>
+
+            <div id="fnResult"></div><br>
+
+        </div>
+
+    </div>
+    <br><br>
+    <p>&nbsp;</p>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>

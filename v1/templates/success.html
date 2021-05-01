@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--   Last Update : April 30 6:09 pm -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="style.css"> -->
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+
+<html>
+<title>
+    Login Status Details
+</title>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="check.js"></script> -->
+    <script src="{{ url_for('static',filename='js/check.js')}}"></script>
+
+</head>
+
+
+<body>
+
+
+
+    <br><br>
+
+    <!--            Registered User Details and File Upload option    -->
+
+
+    <h1 class="sectionHeader"> Logged In User Info </h1>
+    <!--   Section Heading    -->
+    <hr class="rowBorder">
+    <!--     Horizontal Row Border    -->
+    <p>&nbsp;</p>
+
+    <div class="textBox">
+        <!--  Box where text is added -->
+
+        <span class="validateText"> Kindly upload required json file !!! </span>
+        <p>&nbsp;</p>
+        <br>
+        <center><span style="font-size: 20px;font-weight: bold;">Username :</span>&nbsp; &nbsp; <b>{{username}}</b></center>
+        <br><br>
+
+
+        <div class="valUser">
+
+            <form action="/insertData.html" onsubmit="return true" method="POST" enctype="multipart/form-data">
+
+                <span class="formDetails">Upload File : </span> &nbsp; &nbsp;
+                <br><br>
+                <center>
+                    <span><input type="file" name="upfile" placeholder="Browse Json File" required></span>
+                </center>
+
+
+                <br><br>
+
+                <button type="submit" value="Submit" class="submitBtn">Submit</button>
+                <br><br><br>
+
+            </form>
+
+
+
+            <button type="button" value="Log Out" class="submitBtn"><a href="/" style="text-decoration: none;">Log Out</a></button>
+
+            <div id="fnResult"></div><br>
+
+        </div>
+
+    </div>
+    <br><br>
+    <p>&nbsp;</p>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>
