@@ -37,11 +37,17 @@ These html files contain forms to capture user registration and login informatio
 ### Dependencies Required: 
 
 a) python3 needs to be installed on the system .
+
 b) Directory structure similar to the code base as present in Github link needs to be maintained.
+
 c) Additional json files needs to be added to the directory where currently marks.json file is present in the code base
+
 d) `MySql` needs to be downloaded from official website.
+
 e)`Flask` needs to be downloaded. On Ubuntu Machines, this can be done by using : `pip3 install -U Flask` in the terminal
+
 f) After Flask is downloaded, we need to install mysql extension. This can be done by using : `pip3 install flask-mysql`. It serves as mysql extension through which mysql database can be accessed using Flask endpoint.
+
 g) In the `flask_app.py`, valid credentials like database name,database password, database username etc need to be replaced with that of the user currently using the mysql database instance . 
 
 In other words,
