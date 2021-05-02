@@ -26,41 +26,37 @@
 
     <br><br>
     <center>
-        <h2 style="font-weight: bold;"> User Marks Details</h2>
+        <h2 style="font-weight: bold;"> User Data Details</h2>
     </center>
 
 
 
     <br><br>
-    <center>
+    <!-- <center> -->
 
-        <table class='userTabClass'>
-            <tr>
-                <th>Physics</th>
-                <th>Chemistry</th>
-                <th>Maths</th>
-                <th>CSE</th>
-                <th>Total Marks</th>
-                <th>Marks Obtained</th>
+    <table class='userTabClass'>
+        <tr>
+            <th>User Id</th>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Body</th>
 
 
-            </tr>
-            {% for user in userMarks %}
-            <tr>
-                <td>{{user[0]}}</td>
-                <td>{{user[1]}}</td>
-                <td>{{user[2]}}</td>
-                <td>{{user[3]}}</td>
-                <td>{{user[4]}}</td>
-                <td>{{user[5]}}</td>
+        </tr>
+        {% for user in userData %}
+        <tr>
+            <td>{{user[0]}}</td>
+            <td>{{user[1]}}</td>
+            <td>{{user[2]}}</td>
+            <td>{{user[3]}}</td>
 
-            </tr>
+        </tr>
 
-            {% endfor %}
+        {% endfor %}
 
-        </table>
+    </table>
 
-    </center>
+    <!-- </center> -->
 
     <br><br><br><br>
 
