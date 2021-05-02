@@ -34,6 +34,9 @@ These html files contain forms to capture user registration and login informatio
 ### 1 javascript file (present inside static/js folder): 
 `check.js` : It is used for validation of whether the password and confirm password are same or not while registering a user. If not, an alert box pops up displaying message to enter correct password.
 
+### 1 json file (present inside v1 folder): 
+`data.json` : This file has been shared with us by FinancePeer team.
+
 ### Dependencies Required: 
 
 a) python3 needs to be installed on the system .
