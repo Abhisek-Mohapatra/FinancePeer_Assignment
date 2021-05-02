@@ -1,9 +1,6 @@
-
-
 body {
     /*  background :  #9bf3c7;  */
     /* Body background Colour used */
-    /*background-image: url("images/backgroundImg4.jpg");  */
     background-size: cover;
     background-color: rgb(255, 243, 188);
 }
@@ -300,7 +297,7 @@ input::placeholder {
 table.userTabClass {
     width: 50%;
     border: 1px solid black;
-    margin-left: 50%;
+    margin-left: 20%;
 }
 
 th {
