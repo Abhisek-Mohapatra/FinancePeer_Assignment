@@ -8,7 +8,7 @@ Coding Assignment Github Link :
 https://github.com/Abhisek-Mohapatra/FinancePeer_Assignment
 
 Video Link :
-https://iiitaphyd-my.sharepoint.com/:v:/g/personal/abhisek_mohapatra_students_iiit_ac_in/EX7It2336SZBpxrHFGXi9OgBncapVJnJo-2JhU4_XMjNjw?e=7yMmaB
+https://iiitaphyd-my.sharepoint.com/:v:/g/personal/abhisek_mohapatra_students_iiit_ac_in/EXCS4GIl5C1FkU13sUyHL2MBy0EofGN5yUlcF04-pXGJqA?e=38M71D
 
 `NOTE` : If the video cannot be played on sharepoint, kindly download it using download button.
                 
@@ -27,7 +27,7 @@ https://iiitaphyd-my.sharepoint.com/:v:/g/personal/abhisek_mohapatra_students_ii
 `success.html`
 `userPage.html` 
 
-These html files contain forms to capture user registration and login information and provide facilities to upload an external json file and are used to display final result in tabular form after data is retrieved from the database.
+These html files contain forms to capture user registration and login information and support a password based authentication system and provide facilities to upload an external json file and are used to display final result in tabular form after data is retrieved from the database.
 
 ### 1 css file is used (present inside static/css folder):
 `style.css` : It is used for styling the HTML elements like background,buttons,forms etc in a web page.
@@ -40,7 +40,7 @@ a) python3 needs to be installed on the system .
 
 b) Directory structure similar to the code base as present in Github link needs to be maintained.
 
-c) Additional json files needs to be added to the directory where currently marks.json file is present in the code base (that is inside v1 folder)
+c) `data.json` (Json file as share by Financepeer team) file should be present inside the v1 folder where `flask_app.py` file is present.
 
 d) `MySql` needs to be downloaded from official website.
 
