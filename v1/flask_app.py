@@ -86,24 +86,19 @@ def upload_file():
       f = request.files['upfile']
 
       fin=open(f.filename,'r')
-      content_dc=json.loads(fin.read())
+      content_lst=json.loads(fin.read())
 
       conn=mysql.connect()
       cur=conn.cursor()
 
-      for k in content_dc.keys():  # every key is user name
+      for dc in content_lst:  # list of dictionaries
 
-         marks_dc=content_dc[k][0]
+         userId=str(dc["userId"])
+         uid=str(dc["id"])
+         title=dc["title"]
+         body=dc["body"]
 
-         total=marks_dc["total"]
-         phy=marks_dc["physics"]
-         chem=marks_dc["chemistry"]
-         maths=marks_dc["maths"]
-         cse=marks_dc["cse"]
-
-         obt_marks=str(int(phy)+int(chem)+int(maths)+int(cse))
-
-         cur.execute('INSERT INTO MARKS VALUES(%s,%s,%s,%s,%s,%s)',(phy,chem,maths,cse,total,obt_marks))
+         cur.execute('INSERT INTO USER_DATA VALUES(%s,%s,%s,%s)',(userId,uid,title,body))
      
          conn.commit()
 
@@ -120,13 +115,13 @@ def getData():
       conn=mysql.connect()
       cur=conn.cursor()
 
-      users=cur.execute("SELECT * FROM MARKS")  # For Selection
+      users=cur.execute("SELECT * FROM USER_DATA")  # For Selection
 
       if users>0:
 
-         userMarks=cur.fetchall()
+         userData=cur.fetchall()
          cur.close()
-         return render_template('userPage.html',userMarks=userMarks)
+         return render_template('userPage.html',userData=userData)
       
       
 
