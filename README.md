@@ -1,4 +1,4 @@
-# Finacepeer Coding Assignment
+# Financepeer Coding Assignment
 
           Name :  Abhisek Mohapatra
           Roll Number : 2020201020
